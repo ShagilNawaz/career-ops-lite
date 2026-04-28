@@ -1,0 +1,27 @@
+{
+  "name": "Shagil Nawaz",
+  "email": "John@gmail.com",
+  "phone": "+918552555522",
+  "location": "Bengaluru, india",
+  "linkedin": "https://www.linkedin.com/in/shagil-nawaz-a62412284/?skipRedirect=true",
+  "github": "https://github.com/ShagilNawaz",
+  "summary": "I am passionate about software development and i am good at MERN stack development.",
+  "education": "B.Tech CSE, GU 2026",
+  "skills": [
+    "MERN stack",
+    "Java",
+    "DSA",
+    "JavaScript",
+    "Web Development",
+    "SDLC"
+  ],
+  "certifications": [],
+  "experience": [],
+  "projects": [
+    {
+      "name": "B2B Businees Website",
+      "tech": "MERN",
+      "description": "My project is a B2B website where you can get quotes from the manufacturer. Owner can manage their product using admin page. You can display products online to customers with options to customize."
+    }
+  ]
+}
