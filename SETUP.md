@@ -15,31 +15,14 @@
 cd career-ops-lite
 
 # 2. Install dependencies
-# ⚠️ NOTE: Puppeteer will auto-download Chromium (~300MB). This is one-time only.
 npm install
 
 # 3. Start the server
 npm start
-```
 
 Open your browser at **http://localhost:3000**
 
 ---
-
-## Configuration (.env)
-
-| Variable | Default | Description |
-|---|---|---|
-| `PORT` | `3000` | Server port |
-| `OLLAMA_URL` | `http://localhost:11434` | Ollama API URL |
-| `MODEL` | `llama3` | Ollama model to use |
-| `CHROME_PROFILE_PATH` | *(empty)* | Path to your Chrome profile (for LinkedIn) |
-
----
-
-## Setting Up LinkedIn Scraping
-
-LinkedIn requires you to be logged in. The scraper uses your real Chrome browser profile so it can access your LinkedIn session.
 
 **Step 1 — Find your Chrome profile path:**
 
@@ -47,7 +30,6 @@ LinkedIn requires you to be logged in. The scraper uses your real Chrome browser
 |---|---|
 | Windows | `C:\Users\YourName\AppData\Local\Google\Chrome\User Data` |
 | Mac | `/Users/YourName/Library/Application Support/Google/Chrome` |
-| Linux | `/home/YourName/.config/google-chrome` |
 
 **Step 2 — Add to `.env`:**
 ```
@@ -56,7 +38,7 @@ CHROME_PROFILE_PATH=C:\Users\YourName\AppData\Local\Google\Chrome\User Data
 
 **Step 3 — Make sure you're logged into LinkedIn in that Chrome profile.**
 
-> ⚠️ Close Chrome before running LinkedIn scrapes — Chrome and Puppeteer cannot share the profile simultaneously.
+> Close Chrome before running LinkedIn scrapes — Chrome and Puppeteer cannot share the profile simultaneously.
 
 ---
 
